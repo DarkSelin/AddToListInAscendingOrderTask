@@ -1,16 +1,18 @@
 package com.company;
 
+import java.util.LinkedList;
 import java.util.List;
 
-public class ListOperation {
+public class SortedList {
+
+    private List<Integer> list = new LinkedList<Integer>();
 
     /**
      *
-     * @param list - List<Integer> - list for adding a value.
      * @param value - Integer variable for adding to list.
      *              Throws NumberFormatException if value is null.
      */
-    public static void addToList(List<Integer> list, Integer value){
+    public void add(Integer value){
         validateArgument(value);
         int top=0;
         int bottom=list.size();
@@ -32,6 +34,10 @@ public class ListOperation {
             mid=top+(bottom-top)/2;
         }
         list.add(bottom,value);
+    }
+
+    public List<Integer> getSortedList(){
+        return new LinkedList<Integer>(list);
     }
 
     private static void validateArgument(Integer argument){
