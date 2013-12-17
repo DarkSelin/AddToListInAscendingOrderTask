@@ -19,6 +19,7 @@ public class SortedList {
         int mid=top+(bottom-top)/2;
         if (bottom==0){
             list.add(value);
+            return;
         } else if(list.get(top)>=value){
             list.add(top, value);
             return;

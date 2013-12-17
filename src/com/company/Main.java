@@ -1,20 +1,18 @@
 package com.company;
 
 import java.util.List;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
+        int size=10;
+        Random random = new Random();
         SortedList sortedList = new SortedList();
-        List<Integer> list;
-        sortedList.add(55);
-        sortedList.add(57);
-        sortedList.add(13);
-        sortedList.add(11);
-        sortedList.add(11);
-        sortedList.add(13);
-        list = sortedList.getSortedList();
-        for (Integer i : list)
-            System.out.println(list.get(i));
+        for (int i=0;i<size;i++)
+            sortedList.add(random.nextInt());
+        List<Integer> list = sortedList.getSortedList();
+        for (Integer integer : list)
+            System.out.println(integer);
     }
 }
