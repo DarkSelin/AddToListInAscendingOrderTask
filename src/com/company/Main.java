@@ -13,7 +13,6 @@ public class Main {
         sortedList.add(11);
         sortedList.add(11);
         sortedList.add(13);
-        sortedList.add(29);
         list = sortedList.getSortedList();
         for (Integer i : list)
             System.out.println(list.get(i));
