@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>Add to list in ascending order task</description>
     <groupId>com.company</groupId>
-    <artifactId>add-to-list</artifactId>
+    <artifactId>add-to-list-in-ascending-order</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
